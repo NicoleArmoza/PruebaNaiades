@@ -2,33 +2,31 @@
   font-family: "Helvetica Neue LT Pro 65 Medium";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica Neue LT Pro 65 Medium"),
-    url("fonts/HelveticaNeueLTProMd.woff") format("woff");
+  src: local("Helvetica Neue LT Pro 65 Medium"), url(fonts/HelveticaNeueLTProMd.woff)format("woff");
 }
 @font-face {
   font-family: "Helvetica Neue LT Pro 55 Roman";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica Neue LT Pro 55 Roman"),
-    url("fonts/HelveticaNeueLTProRoman.woff") format("woff");
+  src: local("Helvetica Neue LT Pro 55 Roman"),url(fonts/HelveticaNeueLTProRoman.woff)format("woff");
 }
 @font-face {
   font-family: 'Helvetica Neue LT Pro 85 Heavy';
   font-style: normal;
   font-weight: normal;
-  src: local('Helvetica Neue LT Pro 85 Heavy'), url('HelveticaNeueLTProHv.woff') format('woff');
+  src: local('Helvetica Neue LT Pro 85 Heavy'), url(fonts/HelveticaNeueLTProHv.woff)
   }
   @font-face {
     font-family: 'Helvetica Neue LT Pro 75 Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Helvetica Neue LT Pro 75 Bold'), url('HelveticaNeueLTProBd.woff') format('woff');
+    src: local('Helvetica Neue LT Pro 75 Bold'),url(fonts/HelveticaNeueLTProBd.woff)format('woff');
     }
     @font-face {
       font-family: 'Helvetica Neue LT Pro 45 Light';
       font-style: normal;
       font-weight: normal;
-      src: local('Helvetica Neue LT Pro 45 Light'), url('HelveticaNeueLTProLt.woff') format('woff');
+      src: local('Helvetica Neue LT Pro 45 Light'),url(fonts/HelveticaNeueLTProLt.woff)format('woff');
       }
 * {
   margin: 0;
@@ -58,15 +56,17 @@ header {
   text-align: center;
   color: white;
   align-self:flex-end;
+  font-size: 16.67pt;
 }
 .titulo{
+  width: 100%;
   color: white;
   align-self:flex-end;
+  font-size: 56.24pt;
 }
 .abajo {
  display: flex;
  flex-direction: column;
- flex-flow: column wrap;
  justify-content: flex-start;
 }
 
@@ -81,6 +81,7 @@ header {
 .blanco {
   background-color: #ffffff;
   text-align: left;
+  font-size: 15pt;
 }
 
 .negrita {
@@ -90,6 +91,7 @@ header {
   width: 279px;
   background-color: #f4f4f4;
   text-align: center;
+  font-size: 16pt;
 }
 .azul {
   font-weight: bold;
@@ -98,6 +100,7 @@ header {
 button {
   color: white;
   text-align: center;
+  font-size: 16.67pt;
   background-color: #23135f;
 }
 
@@ -116,18 +119,21 @@ button {
 }
 
 .video {
-    border-radius: 2px;
-    border-color: white;
+  font-size: 15pt;
+  border: 7px white solid;
+  border-radius: 5px;
 }
 
 .cuatro {
     height: 125px;
+    font-size:30.64pt;
  
 }
 .centro {
   width: 100%;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -139,7 +145,13 @@ footer {
   background-color: #7c55b5;
   color:white;
 }
-.mayusc{
+.info {
+  font-size: 15pt; 
+}
+.derechos {
+  font-size: 12pt;
+}
+.mayusc {
     text-transform: uppercase;
 }
 
