@@ -44,13 +44,14 @@ header {
   height: 465px;
   background-image: url("img/header.png");
   padding:45px;
+  padding-top: 49px;
 }
 
 .rectangulo{
   background-color:#23135F;
   width:90px; 
   height:27px;
-  align-self:flex-end;
+  align-self:flex-end; 
 }
 .rectangulo p {
   text-transform: uppercase;
@@ -120,6 +121,7 @@ button {
 .tres p {
   color:white;
   text-align: left;
+  padding-left: 41px;
 }
 
 .video {
@@ -131,9 +133,10 @@ button {
 .cuatro {
     height: 125px;
     font-size:30.64pt;
-    padding: 45px;
- 
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
+
 .centro {
   width: 100%;
   display: flex;
