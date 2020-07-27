@@ -87,24 +87,12 @@ header {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 45px;
 }
 
-.blanco {
-    background-color: #ffffff;
-    text-align: left;
-    font-size: 15pt;
-}
+
 
 .negrita {
     font-weight: bold;
-}
-
-.gris {
-    width: 279px;
-    background-color: #f4f4f4;
-    text-align: center;
-    font-size: 16pt;
 }
 
 .azul {
@@ -119,10 +107,31 @@ button {
     background-color: #23135f;
 }
 
-.dos {
+.primeraSeccion {
     height: 314px;
-    padding: 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
 }
+
+    .primeraSeccion .blanco {
+        background-color: #FEFEFE;
+        text-align: left;
+        font-size: 15px;
+        flex: 1;
+    }
+
+    .primeraSeccion .gris {
+        flex: 0 1 279px;
+        background-color: #f4f4f4;
+        text-align: center;
+        font-size: 16pt;
+        height: 100%;
+    }
 
 .tres {
     height: 283px;
