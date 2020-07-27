@@ -102,11 +102,6 @@ button {
 
 }
 
-.primeraSeccion .gris .confirm {
-    
-    
-}
-
 .primeraSeccion {
     height: 314px;
     width: 100%;
@@ -131,7 +126,7 @@ button {
     }
 
     .primeraSeccion .gris {
-        flex: 0 1 279px; /*flex-basis flex-shrink flex-basis*/
+        flex: 0 1 279px; 
         background-color: #f4f4f4;
         text-align: center;
         font-size: 16px;
@@ -144,29 +139,42 @@ button {
     }
 
 .segundaSeccion {
-    height: 283px;
     background-image: url("img/backgroundvid.png");
-    /*padding: 45px;*/
-    padding-right: 55px;
+    width: 100%;
+    height: 283px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; 
+    align-content: space-between; 
 }
 
-.segundaSeccion p {
+.segundaSeccion .texto {
         color: white;
         text-align: left;
-        padding-left: 41px;
+        font-size: 15px;
+        height: 100%;
+        padding: 70px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-.video {
+.segundaSeccion .video { 
+        text-align: center;
+        height: 100%;
+        padding-top: 43px;
+        padding-left: 56px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+.segundaSeccion .video img {
     border: 6px #FFFFFF solid;
     border-radius: 5px;
 }
-/*
-.contenedor {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-*/
 
 .terceraSeccion {
     height: 130px;
