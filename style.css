@@ -127,13 +127,14 @@ button {
         line-height: 30px;
     }
 
-.tres {
+.segundaSeccion {
     height: 283px;
     background-image: url("img/backgroundvid.png");
-    padding: 45px;
+    /*padding: 45px;*/
+    padding-right: 55px;
 }
 
-    .tres p {
+.segundaSeccion p {
         color: white;
         text-align: left;
         padding-left: 41px;
@@ -144,14 +145,21 @@ button {
     border: 6px#FFFFFF solid;
     border-radius: 5px;
 }
+/*
+.contenedor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+*/
 
-.cuartaSeccion {
+.terceraSeccion {
     height: 130px;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
-    .cuartaSeccion p span {
+    .terceraSeccion p span {
         font-size: 30.64px;
     }
 
@@ -166,18 +174,14 @@ button {
 }
 
 footer {
-    width: 700px;
     height: 125px;
     background-color: #7c55b5;
-}
-
-.caja {
-  width: 100%;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 53px 25px;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 53px 25px;
 }
 
 .info {
