@@ -1,110 +1,122 @@
 @font-face {
-  font-family: "Helvetica Neue LT Pro 65 Medium";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Helvetica Neue LT Pro 65 Medium"), url(fonts/HelveticaNeueLTProMd.woff)format("woff");
+    font-family: "Helvetica Neue LT Pro 65 Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Helvetica Neue LT Pro 65 Medium"), url(fonts/HelveticaNeueLTProMd.woff)format("woff");
 }
+
 @font-face {
-  font-family: "Helvetica Neue LT Pro 55 Roman";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Helvetica Neue LT Pro 55 Roman"),url(fonts/HelveticaNeueLTProRoman.woff)format("woff");
+    font-family: "Helvetica Neue LT Pro 55 Roman";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Helvetica Neue LT Pro 55 Roman"),url(fonts/HelveticaNeueLTProRoman.woff)format("woff");
 }
+
 @font-face {
-  font-family: 'Helvetica Neue LT Pro 85 Heavy';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Helvetica Neue LT Pro 85 Heavy'), url(fonts/HelveticaNeueLTProHv.woff)
-  }
-  @font-face {
+    font-family: 'Helvetica Neue LT Pro 85 Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Neue LT Pro 85 Heavy'), url(fonts/HelveticaNeueLTProHv.woff)format("woff");
+}
+
+@font-face {
     font-family: 'Helvetica Neue LT Pro 75 Bold';
     font-style: normal;
     font-weight: normal;
     src: local('Helvetica Neue LT Pro 75 Bold'),url(fonts/HelveticaNeueLTProBd.woff)format('woff');
-    }
-    @font-face {
-      font-family: 'Helvetica Neue LT Pro 45 Light';
-      font-style: normal;
-      font-weight: normal;
-      src: local('Helvetica Neue LT Pro 45 Light'),url(fonts/HelveticaNeueLTProLt.woff)format('woff');
-      }
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Pro 45 Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica Neue LT Pro 45 Light'),url(fonts/HelveticaNeueLTProLt.woff)format('woff');
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
-  width: 700px;
+    width: 700px;
 }
 
 header {
-  height: 465px;
-  background-image: url("img/header.png");
-  padding:45px;
-  padding-top: 49px;
+    height: 465px;
+    background-image: url("img/header.png");
+    padding-left: 52px;
+    padding-top: 49px;
+    /*O pones padding o pones cada uno de los padding por separado. los dos juntos confunde*/
 }
 
-.rectangulo{
-  background-color:#23135F;
-  width:90px; 
-  height:27px;
-  align-self:flex-end; 
+.lunch {
+    background-color: #23135F;
+    width: 90px;
+    height: 27px;
+    margin-top: 150px;
 }
-.rectangulo p {
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-  align-self:flex-end;
-  font-size: 16.67pt;
+
+    .lunch p {
+        text-transform: uppercase;
+        width: 100%;
+        line-height: 27px;
+        text-align: center;
+        color: #eeeeee;
+        /*No te confies con el color de texto! no era blanco*/
+        font-size: 16.67px;
+        /*Estas poniendo pt a los font-size y en photoshop aparece px. Por eso se te veia mas grande*/
+    }
+
+.titulo {
+    margin-top: 16px;
 }
-.titulo{
-  width: 100%;
-  color: white;
-  align-self:flex-end;
-  font-size: 56.24pt;
-}
-.abajo {
- display: flex;
- flex-direction: column;
- justify-content: flex-start;
-}
+
+    .titulo p {
+        width: 409.40px;
+        color: #eeeeee;
+        font-size: 56.24px;
+    }
 
 
 .contenedores {
-  width: 100%;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 45px;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 45px;
 }
 
 .blanco {
-  background-color: #ffffff;
-  text-align: left;
-  font-size: 15pt;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 15pt;
 }
 
 .negrita {
-  font-weight: bold;
+    font-weight: bold;
 }
+
 .gris {
-  width: 279px;
-  background-color: #f4f4f4;
-  text-align: center;
-  font-size: 16pt;
+    width: 279px;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-size: 16pt;
 }
+
 .azul {
-  font-weight: bold;
-  color: #23135f;
+    font-weight: bold;
+    color: #23135f;
 }
+
 button {
-  color: white;
-  text-align: center;
-  font-size: 16.67pt;
-  background-color: #23135f;
+    color: white;
+    text-align: center;
+    font-size: 16.67pt;
+    background-color: #23135f;
 }
 
 .dos {
@@ -118,77 +130,80 @@ button {
     padding: 45px;
 }
 
-.tres p {
-  color:white;
-  text-align: left;
-  padding-left: 41px;
-}
+    .tres p {
+        color: white;
+        text-align: left;
+        padding-left: 41px;
+    }
 
 .video {
-  font-size: 15pt;
-  border: 7px white solid;
-  border-radius: 5px;
+    font-size: 15pt;
+    border: 7px white solid;
+    border-radius: 5px;
 }
 
 .cuatro {
     height: 125px;
-    font-size:30.64pt;
+    font-size: 30.64pt;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
 .centro {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 footer {
-  width: 700px;
-  height: 125px;
-  background-color: #7c55b5;
-  color:white;
+    width: 700px;
+    height: 125px;
+    background-color: #7c55b5;
+    color: white;
 }
+
 .info {
-  font-size: 15pt; 
+    font-size: 15pt;
 }
+
 .derechos {
-  font-size: 12pt;
+    font-size: 12pt;
 }
+
 .mayusc {
     text-transform: uppercase;
 }
 
 .medium {
-  font-family:"Helvetica Neue LT Pro 65 Medium";
-  font-style: normal;
-  font-weight: normal;
+    font-family: "Helvetica Neue LT Pro 65 Medium";
+    font-style: normal;
+    font-weight: normal;
 }
 
 .heavy {
-  font-family:"Helvetica Neue LT Pro 85 Heavy";
-  font-style: normal;
-  font-weight: normal;
+    font-family: "Helvetica Neue LT Pro 85 Heavy";
+    font-style: normal;
+    font-weight: normal;
 }
 
 .roman {
-  font-family:"Helvetica Neue LT Pro 55 Roman";
-  font-style: normal;
-  font-weight: normal;
+    font-family: "Helvetica Neue LT Pro 55 Roman";
+    font-style: normal;
+    font-weight: normal;
 }
 
 .bold {
-  font-family:"Helvetica Neue LT Pro 75 Bold";
-  font-style: normal;
-  font-weight: bold;
+    font-family: "Helvetica Neue LT Pro 75 Bold";
+    font-style: normal;
+    font-weight: bold;
 }
 
 .light {
-  font-family:"Helvetica Neue LT Pro 45 Light";
-  font-style: normal;
-  font-weight: normal;
+    font-family: "Helvetica Neue LT Pro 45 Light";
+    font-style: normal;
+    font-weight: normal;
 }
