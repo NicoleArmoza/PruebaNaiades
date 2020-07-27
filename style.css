@@ -93,10 +93,18 @@ header {
 
 
 button {
-    color: white;
+    color: #eeeeee;
     text-align: center;
-    font-size: 16.67pt;
+    font-size: 16.67px;
     background-color: #23135f;
+    border: none;
+    padding: 11px 17px;
+
+}
+
+.primeraSeccion .gris .confirm {
+    
+    
 }
 
 .primeraSeccion {
@@ -115,16 +123,24 @@ button {
         text-align: left;
         font-size: 15px;
         flex: 1;
+        height: 100%;
+        padding: 41px 37px 41px 59px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .primeraSeccion .gris {
-        flex: 0 1 279px;
+        flex: 0 1 279px; /*flex-basis flex-shrink flex-basis*/
         background-color: #f4f4f4;
         text-align: center;
-        font-size: 16pt;
+        font-size: 16px;
         height: 100%;
         padding-top: 68px;
-        line-height: 30px;
+        padding-bottom: 68px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
 .tres {
@@ -140,8 +156,7 @@ button {
     }
 
 .video {
-    font-size: 15pt;
-    border: 6px#FFFFFF solid;
+    border: 6px #FFFFFF solid;
     border-radius: 5px;
 }
 
