@@ -45,6 +45,10 @@ body {
     width: 700px;
 }
 
+.oscuro {
+    color: #232323;
+}
+
 header {
     height: 465px;
     background-image: url("img/header.png");
@@ -151,12 +155,15 @@ button {
     border-radius: 5px;
 }
 
-.cuatro {
+.cuartaSeccion {
     height: 125px;
-    font-size: 30.64pt;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+    .cuartaSeccion p span {
+        font-size: 30.64px;
+    }
 
 .centro {
     width: 100%;
