@@ -54,7 +54,6 @@ header {
     background-image: url("img/header.png");
     padding-left: 52px;
     padding-top: 49px;
-    /*O pones padding o pones cada uno de los padding por separado. los dos juntos confunde*/
 }
 
 .lunch {
@@ -92,6 +91,7 @@ header {
     color: #23135f;
 }
 
+
 button {
     color: white;
     text-align: center;
@@ -123,6 +123,8 @@ button {
         text-align: center;
         font-size: 16pt;
         height: 100%;
+        padding-top: 68px;
+        line-height: 30px;
     }
 
 .tres {
